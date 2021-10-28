@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.apache.sshd"
+		module="sshd-common"
+		revision="2.4.0"
+		status="release"
+		publication="20200204132022"
+	>
+		<license name="Apache 2.0 License" url="https://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="" />
+		<m:dependency.management__org.springframework__spring-oxm__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-oxm__version>
+		<m:properties__groovy.version>${groovy.major.version}.${groovy.minor.version}.${groovy.release.version}</m:properties__groovy.version>
+		<m:properties__spring.version>5.2.2.RELEASE</m:properties__spring.version>
+		<m:properties__java.major.version>1</m:properties__java.major.version>
+		<m:dependency.management__org.eclipse.jgit__org.eclipse.jgit.ssh.apache__version>5.6.0.201912101111-r</m:dependency.management__org.eclipse.jgit__org.eclipse.jgit.ssh.apache__version>
+		<m:dependency.management__org.springframework__spring-messaging__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-messaging__version>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:dependency.management__com.jcraft__jsch__version>0.1.55</m:dependency.management__com.jcraft__jsch__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.2.2</m:dependency.management__commons-collections__commons-collections__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.7.29</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__org.springframework__spring-jdbc__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-jdbc__version>
+		<m:dependency.management__org.eclipse.jgit__org.eclipse.jgit.pgm__version>5.6.0.201912101111-r</m:dependency.management__org.eclipse.jgit__org.eclipse.jgit.pgm__version>
+		<m:properties__build-helper-maven-plugin.version>3.0.0</m:properties__build-helper-maven-plugin.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__java.minor.version>8</m:properties__java.minor.version>
+		<m:dependency.management__org.springframework__spring-jms__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-jms__version>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:dependency.management__org.codehaus.groovy__groovy-ant__exclusion_0>org.apache.ant__ant-junit</m:dependency.management__org.codehaus.groovy__groovy-ant__exclusion_0>
+		<m:dependency.management__org.springframework__spring-webflux__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-webflux__version>
+		<m:dependency.management__org.mockito__mockito-core__version>3.2.4</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__org.eclipse.jgit__org.eclipse.jgit__version>5.6.0.201912101111-r</m:dependency.management__org.eclipse.jgit__org.eclipse.jgit__version>
+		<m:dependency.management__org.springframework__spring-context-indexer__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-context-indexer__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.29</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:properties__surefire.plugin.version>2.22.2</m:properties__surefire.plugin.version>
+		<m:properties__ant.version>1.10.7</m:properties__ant.version>
+		<m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.not-yet-commons-ssl__version>0.3.11_1</m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.not-yet-commons-ssl__version>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:properties__javac.target>${javac.source}</m:properties__javac.target>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:properties__bouncycastle.version>1.64</m:properties__bouncycastle.version>
+		<m:properties__project.build.java.source>${javac.source}</m:properties__project.build.java.source>
+		<m:properties__sniffer.signatures.version>1.0</m:properties__sniffer.signatures.version>
+		<m:properties__plexus.archiver.version>4.1.0</m:properties__plexus.archiver.version>
+		<m:properties__groovy.major.version>2</m:properties__groovy.major.version>
+		<e:sbtTransformHash>1d0a4c360422875c96e0a22adc1fb4986ed442ff</e:sbtTransformHash>
+		<m:properties__maven.compiler.target>${javac.target}</m:properties__maven.compiler.target>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.codehaus.gmaven__groovy-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-pmd-plugin__null|org.codehaus.mojo__animal-sniffer-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M2|org.apache.maven.plugins__maven-clean-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.8.1|org.apache.maven.plugins__maven-dependency-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__1.6.0|org.apache.rat__apache-rat-plugin__null|org.apache.maven.plugins__maven-assembly-plugin__3.2.0|org.apache.felix__maven-bundle-plugin__4.2.1|org.apache.maven.plugins__maven-jar-plugin__3.2.0|org.apache.maven.plugins__maven-surefire-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__3.0.0|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.codehaus.gmaven__groovy-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-pmd-plugin__null|org.codehaus.mojo__animal-sniffer-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M2|org.apache.maven.plugins__maven-clean-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.8.1|org.apache.maven.plugins__maven-dependency-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__1.6.0|org.apache.rat__apache-rat-plugin__null|org.apache.maven.plugins__maven-assembly-plugin__3.2.0|org.apache.felix__maven-bundle-plugin__4.2.1|org.apache.maven.plugins__maven-jar-plugin__3.2.0|org.apache.maven.plugins__maven-surefire-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__3.0.0|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null</m:maven.plugins>
+		<m:properties__groovy.release.version>8</m:properties__groovy.release.version>
+		<m:dependency.management__org.springframework__spring-webmvc__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-webmvc__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.6</m:dependency.management__commons-lang__commons-lang__version>
+		<m:dependency.management__org.springframework__spring-core__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-core__version>
+		<m:dependency.management__commons-httpclient__commons-httpclient__exclusion_0>commons-logging__commons-logging</m:dependency.management__commons-httpclient__commons-httpclient__exclusion_0>
+		<m:dependency.management__org.springframework__spring-orm__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-orm__version>
+		<m:properties__gmaven.plugin.version>2.1.1</m:properties__gmaven.plugin.version>
+		<m:properties__bytebuddy.version>1.10.6</m:properties__bytebuddy.version>
+		<m:properties__java.sdk.version>8</m:properties__java.sdk.version>
+		<m:properties__ant.build.javac.source>${javac.source}</m:properties__ant.build.javac.source>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:dependency.management__org.springframework__spring-tx__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-tx__version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:dependency.management__org.slf4j__slf4j-jdk14__version>1.7.29</m:dependency.management__org.slf4j__slf4j-jdk14__version>
+		<m:properties__min.required.maven.version>3.5.0</m:properties__min.required.maven.version>
+		<m:dependency.management__org.bouncycastle__bcpg-jdk15on__version>1.64</m:dependency.management__org.bouncycastle__bcpg-jdk15on__version>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>1.64</m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>
+		<m:dependency.management__org.springframework__spring-expression__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-expression__version>
+		<m:dependency.management__net.sf.jpam__jpam__version>1.1</m:dependency.management__net.sf.jpam__jpam__version>
+		<m:dependency.management__org.eclipse.jgit__org.eclipse.jgit.ssh.apache__exclusion_1>org.apache.sshd__sshd-core</m:dependency.management__org.eclipse.jgit__org.eclipse.jgit.ssh.apache__exclusion_1>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.5.10</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:dependency.management__org.eclipse.jgit__org.eclipse.jgit.ssh.apache__exclusion_0>org.apache.sshd__sshd-sftp</m:dependency.management__org.eclipse.jgit__org.eclipse.jgit.ssh.apache__exclusion_0>
+		<m:properties__groovy.minor.version>5</m:properties__groovy.minor.version>
+		<m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>1.64</m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>
+		<m:dependency.management__org.springframework__spring-aspects__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-aspects__version>
+		<m:dependency.management__org.springframework__spring-websocket__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-websocket__version>
+		<m:dependency.management__org.springframework__spring-core__exclusion_0>org.springframework__spring-jcl</m:dependency.management__org.springframework__spring-core__exclusion_0>
+		<m:properties__groovy.compliance.level>2.0</m:properties__groovy.compliance.level>
+		<m:dependency.management__org.springframework__spring-context__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-context__version>
+		<m:properties__jgit.version>5.6.0.201912101111-r</m:properties__jgit.version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.29</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.29</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__org.springframework__spring-test__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-test__version>
+		<m:properties__projectRoot>${project.basedir}/..</m:properties__projectRoot>
+		<m:dependency.management__log4j__log4j__exclusion_0>javax.jms__jms</m:dependency.management__log4j__log4j__exclusion_0>
+		<m:properties__slf4j.version>1.7.29</m:properties__slf4j.version>
+		<m:dependency.management__log4j__log4j__exclusion_1>com.sun.jmx__jmxri</m:dependency.management__log4j__log4j__exclusion_1>
+		<m:dependency.management__log4j__log4j__exclusion_2>com.sun.jdmk__jmxtools</m:dependency.management__log4j__log4j__exclusion_2>
+		<m:dependency.management__log4j__log4j__exclusion_3>ant__ant-nodeps</m:dependency.management__log4j__log4j__exclusion_3>
+		<m:dependency.management__log4j__log4j__exclusion_4>ant__ant-junit</m:dependency.management__log4j__log4j__exclusion_4>
+		<m:dependency.management__log4j__log4j__exclusion_5>ant-contrib__ant-contrib</m:dependency.management__log4j__log4j__exclusion_5>
+		<m:dependency.management__ch.ethz.ganymed__ganymed-ssh2__version>262</m:dependency.management__ch.ethz.ganymed__ganymed-ssh2__version>
+		<m:dependency.management__tomcat__tomcat-apr__version>5.5.23</m:dependency.management__tomcat__tomcat-apr__version>
+		<m:dependency.management__org.codehaus.groovy__groovy__version>2.5.8</m:dependency.management__org.codehaus.groovy__groovy__version>
+		<m:properties__project.build.java.target>${javac.target}</m:properties__project.build.java.target>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:dependency.management__commons-httpclient__commons-httpclient__version>3.1</m:dependency.management__commons-httpclient__commons-httpclient__version>
+		<m:dependency.management__org.springframework__spring-aop__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-aop__version>
+		<m:dependency.management__commons-io__commons-io__version>2.6</m:dependency.management__commons-io__commons-io__version>
+		<m:properties__pmd.version>6.20.0</m:properties__pmd.version>
+		<m:dependency.management__net.bytebuddy__byte-buddy__version>1.10.6</m:dependency.management__net.bytebuddy__byte-buddy__version>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__version>4.4.12</m:dependency.management__org.apache.httpcomponents__httpcore__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-ant__version>2.5.8</m:dependency.management__org.codehaus.groovy__groovy-ant__version>
+		<m:properties__javac.source>${java.major.version}.${java.minor.version}</m:properties__javac.source>
+		<m:dependency.management__org.springframework__spring-beans__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-beans__version>
+		<m:dependency.management__com.jcraft__jzlib__version>1.1.3</m:dependency.management__com.jcraft__jzlib__version>
+		<m:dependency.management__org.springframework__spring-web__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-web__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>
+		<m:properties__ant.build.javac.target>${javac.target}</m:properties__ant.build.javac.target>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__net.bytebuddy__byte-buddy-agent__version>1.10.6</m:dependency.management__net.bytebuddy__byte-buddy-agent__version>
+		<m:dependency.management__org.springframework__spring-context-support__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-context-support__version>
+		<m:dependency.management__org.springframework__spring-jcl__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-jcl__version>
+		<m:dependency.management__net.i2p.crypto__eddsa__version>0.3.0</m:dependency.management__net.i2p.crypto__eddsa__version>
+		<m:dependency.management__org.springframework__spring-instrument__version>5.2.2.RELEASE</m:dependency.management__org.springframework__spring-instrument__version>
+		<m:dependency.management__org.apache.mina__mina-core__version>2.0.21</m:dependency.management__org.apache.mina__mina-core__version>
+		<m:properties__maven.archiver.version>3.5.0</m:properties__maven.archiver.version>
+		<m:properties__maven.compiler.source>${javac.source}</m:properties__maven.compiler.source>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="sshd-common" type="jar" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.29" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.bouncycastle" name="bcpg-jdk15on" rev="1.64" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.bouncycastle" name="bcpkix-jdk15on" rev="1.64" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="net.i2p.crypto" name="eddsa" rev="0.3.0" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.slf4j" name="jcl-over-slf4j" rev="1.7.29" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.7.29" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.mockito" name="mockito-core" rev="3.2.4" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.apache.servicemix.bundles" name="org.apache.servicemix.bundles.not-yet-commons-ssl" rev="0.3.11_1" force="true" conf="test->runtime(*),master(compile)"/>
+	</dependencies>
+</ivy-module>
