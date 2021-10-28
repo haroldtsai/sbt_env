@@ -1,0 +1,1 @@
+scalac -bootclasspath /Users/harold/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar -classpath /Users/harold/Documents/coding/scala/scala-seed-project/target/scala-2.12/classes /Users/harold/Documents/coding/scala/scala-seed-project/src/main/scala/example/Hello.scala
