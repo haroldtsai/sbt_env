@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
 	<info organisation="com.squareup.okhttp3"
 		module="parent"
 		revision="3.7.0"
@@ -25,7 +25,6 @@
 		<m:properties__apache.http.version>4.2.2</m:properties__apache.http.version>
 		<m:properties__java.version>1.7</m:properties__java.version>
 		<m:dependency.management__com.google.android__android__version>4.1.1.4</m:dependency.management__com.google.android__android__version>
-		<e:sbtTransformHash>2bcc306905bef2b6860533baca20d8c7b14755a7</e:sbtTransformHash>
 		<m:dependency.management__com.squareup.okio__okio__version>1.12.0</m:dependency.management__com.squareup.okio__okio__version>
 		<m:properties__alpn.jdk7.version>7.1.2.v20141202</m:properties__alpn.jdk7.version>
 		<m:properties__android.version>4.1.1.4</m:properties__android.version>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
 	<info organisation="com.squareup.okhttp3"
 		module="okhttp-urlconnection"
 		revision="3.7.0"
@@ -23,7 +23,6 @@
 		<m:properties__apache.http.version>4.2.2</m:properties__apache.http.version>
 		<m:properties__java.version>1.7</m:properties__java.version>
 		<m:dependency.management__com.google.android__android__version>4.1.1.4</m:dependency.management__com.google.android__android__version>
-		<e:sbtTransformHash>8b05223913cde5bfc613bf3c0c0e3e586879da1b</e:sbtTransformHash>
 		<m:dependency.management__com.squareup.okio__okio__version>1.12.0</m:dependency.management__com.squareup.okio__okio__version>
 		<m:properties__alpn.jdk7.version>7.1.2.v20141202</m:properties__alpn.jdk7.version>
 		<m:properties__android.version>4.1.1.4</m:properties__android.version>
@@ -49,10 +48,18 @@
 		<artifact name="okhttp-urlconnection" type="jar" ext="jar" conf="master"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.codehaus.mojo" name="animal-sniffer-annotations" rev="1.15" force="true" conf="optional->compile(*),master(compile)"/>
-		<dependency org="com.squareup.okhttp3" name="okhttp" rev="3.7.0" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
-		<dependency org="com.squareup.okhttp3" name="okhttp-testing-support" rev="3.7.0" force="true" conf="test->runtime(*),master(compile)"/>
-		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(compile)"/>
-		<dependency org="com.squareup.okhttp3" name="mockwebserver" rev="3.7.0" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.codehaus.mojo" name="animal-sniffer-annotations" rev="1.15" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="com.squareup.okhttp3" name="okhttp" rev="3.7.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.squareup.okhttp3" name="okhttp-testing-support" rev="3.7.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="com.squareup.okhttp3" name="mockwebserver" rev="3.7.0" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="com.squareup.okio" module="okio" matcher="exact" rev="1.12.0"/>
+		<override org="com.google.android" module="android" matcher="exact" rev="4.1.1.4"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="16.0"/>
+		<override org="org.bouncycastle" module="bcprov-jdk15on" matcher="exact" rev="1.50"/>
+		<override org="io.airlift" module="airline" matcher="exact" rev="0.7"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.12"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.2.2"/>
+		<override org="com.squareup.moshi" module="moshi" matcher="exact" rev="1.1.0"/>
 	</dependencies>
 </ivy-module>
